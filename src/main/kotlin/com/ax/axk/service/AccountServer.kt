@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service
 @Service
 class AccountServer(private val accountMapper: AccountMapper) : AccountServiceImpl {
     override fun add(account: Account): Int {
-        // 1 添加一行
+        // 1 添加一行,忽略null值
         val line = accountMapper.insertSelective(account);
         println("insert $line / ${account.toString()},accountServer");
         return line;
