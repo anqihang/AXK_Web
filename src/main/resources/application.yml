@@ -1,0 +1,27 @@
+#spring.application.name=AXK
+spring:
+  #  devtools:
+  #    restart:
+  #      enabled: false
+  application:
+    name: AXK
+  datasource:
+    #数据库url/用户名/密码
+    url: jdbc:mysql://localhost:3306/axk
+    username: root
+    password: 密码
+  mybatis-flex:
+    #......
+#    datasource:
+    #......
+#    configuration:
+    #......
+#    global-config:
+    #......
+#    admin-config:
+    #......
+#    seata-config:
+    #......
+  jackson:
+    # 查询为null的字段不返回
+    default-property-inclusion: non_null
